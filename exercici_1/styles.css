@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+.caixa{
+    /*background: black;*/
+    height: 1000px;
+    width: 1000px;
+    position: relative;
+}
+.pilota{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 30px auto 0;
+    background-color: #f5f11e;
+    border-radius: 50%;
+    box-shadow: inset -25px -25px 40px rgba(247, 242, 242, 0.477);
+    position:absolute;
+    animation: animacio 4s linear infinite alternate-reverse;
+    /*animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;*/
+}
+@keyframes animacio {
+    0% {left: 0vh; top: 10vh;}
+    25% {left: 25%; top: 95vh;}
+    50% {left: 50%; top: 0vh;}
+    75% {left: 75%; top: 95vh;}
+    100% {left: 100vh; top: 0vh;}
+}
+
+
